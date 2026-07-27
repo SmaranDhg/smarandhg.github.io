@@ -1,0 +1,28 @@
+<footer id="contact">
+  <div class="eyebrow" style="max-width:1180px;margin:0 auto 14px;padding:0 clamp(20px,6vw,80px);">Contact</div>
+  <div class="titleblock reveal">
+    <div class="tb-cell">
+      <div class="tb-label">Name</div>
+      <div class="tb-value">Smaran Dhungana</div>
+    </div>
+    <div class="tb-cell">
+      <div class="tb-label">Location</div>
+      <div class="tb-value">Kathmandu, Nepal</div>
+    </div>
+    <div class="tb-cell">
+      <div class="tb-label">Languages</div>
+      <div class="tb-value">English · Hindi · Nepali</div>
+    </div>
+    <div class="tb-cell">
+      <div class="tb-label">Contact</div>
+      <div class="tb-value"><a href="mailto:smarandhg@gmail.com">smarandhg@gmail.com</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); } });
+  }, { threshold:0.15 });
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>

@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<section id="post" style="padding-top:150px;">
+  <div class="eyebrow mono">Sheet — Blog</div>
+  <a class="back-link" href="{{ '/blog/' | relative_url }}">&larr; All posts</a>
+  <div class="post-body reveal" style="margin-top:36px;">
+    <h1>{{ page.title }}</h1>
+    <span class="post-date mono">{{ page.date | date: "%B %-d, %Y" }}</span>
+    {{ content }}
+  </div>
+</section>

@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blog
+description: Writing on agentic systems, human-in-the-loop design, and neuro-symbolic reasoning.
+permalink: /blog/
+---
+<section id="blog" style="padding-top:150px;">
+  <div class="eyebrow mono">Sheet — Blog</div>
+  <h1 class="hero-title" style="font-size:clamp(36px,6vw,64px);">Writing</h1>
+
+  {% if site.posts.size > 0 %}
+  <div class="post-list">
+    {% for post in site.posts %}
+    <a class="post-item reveal" href="{{ post.url | relative_url }}">
+      <div class="post-date mono">{{ post.date | date: "%b %-d, %Y" }}</div>
+      <div>
+        <div class="post-title">{{ post.title }}</div>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 32 }}</p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p style="margin-top:24px; opacity:0.75;">No posts yet — check back soon.</p>
+  {% endif %}
+</section>

@@ -1,0 +1,25 @@
+title: Smaran Dhungana
+description: >-
+  Smaran Dhungana — Senior AI Engineer. Data engineering, backend systems,
+  and AI agent security across three roles in two years.
+url: "https://smarandhg.github.io"
+
+markdown: kramdown
+permalink: /blog/:title/
+
+collections:
+  posts:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
