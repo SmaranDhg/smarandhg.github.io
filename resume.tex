@@ -1,0 +1,187 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{geometry}
+\usepackage{charter}
+\usepackage{xcolor}
+
+\geometry{letterpaper, margin=0.52in, top=0.48in, bottom=0.48in}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!75!black,
+    urlcolor=blue!75!black
+}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large\bfseries\color{black!90}
+}{}{0em}{}[\color{black!35}\titlerule \vspace{-3pt}]
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0.5pt}
+  \item[]
+    \begin{tabular*}{\linewidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{0.5pt}
+  \item[]
+    \begin{tabular*}{\linewidth}[t]{p{0.80\linewidth}@{\extracolsep{\fill}}r}
+      #1 & \small #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\begin{document}
+
+% -------------------- HEADER --------------------
+\begin{center}
+  {\Huge \textbf{Smaran Dhungana}} \\ \vspace{3pt}
+  \small
+  Kathmandu, Nepal \ $|$ \ 
+  \href{mailto:smarandhg@gmail.com}{smarandhg@gmail.com} \ $|$ \ 
+  +977 9846832074 \ $|$ \ 
+  \href{https://smarandhg.github.io}{smarandhg.github.io} \ $|$ \ 
+  \href{https://github.com/SmaranDhg}{github.com/SmaranDhg}
+  \\ \vspace{2pt}
+  \textit{Prospective Ph.D. Applicant in Computer Science \& Engineering --- AI Safety, Distributed Systems \& Verifiable Reasoning}
+\end{center}
+
+\vspace{-8pt}
+
+% -------------------- RESEARCH INTERESTS --------------------
+\section{Research Interests}
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+  \item \textbf{AI Agent Safety \& Governance:} Zero Trust identity architectures, Model Context Protocol (MCP) runtime verification, capability delegation, and mitigation of indirect prompt injection and cascading tool-use vulnerabilities.
+  \item \textbf{Resilient Distributed Systems:} Multi-agent coordination protocols, computation/communication co-scheduling, state synchronization under partial observability, and scalable data infrastructure.
+  \item \textbf{Neuro-Symbolic \& Verifiable AI:} Grounding neural decision-making with explicit domain ontologies, formal knowledge graphs, and axiomatic constraint satisfaction models.
+\end{itemize}
+
+% -------------------- EDUCATION --------------------
+\section{Education}
+\begin{itemize}[leftmargin=*,label={}]
+  \resumeSubheading
+    {Tribhuvan University, Institute of Engineering (IOE), Pulchowk Campus}{Lalitpur, Nepal}
+    {Bachelor of Engineering (B.E.) in Computer Engineering --- \textbf{First Division (71.67\%)}}{Dec 2018 -- Dec 2022}
+    \begin{itemize}[leftmargin=*,itemsep=0.5pt,topsep=1pt]
+      \item \textit{Institution Note:} Pulchowk Campus is the flagship and most selective engineering college in Nepal ($<3\%$ national entrance exam acceptance rate).
+    \end{itemize}
+
+  \resumeSubheading
+    {Shree Amar Singh Model Secondary School}{Pokhara, Nepal}
+    {High School Diploma, Science Stream (Physics, Mathematics, Chemistry)}{2016 -- 2018}
+\end{itemize}
+
+% -------------------- STANDARDIZED TESTS --------------------
+\vspace{-6pt}
+\section{Standardized Test Scores}
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+  \item \textbf{TOEFL iBT:} \textbf{100 / 120} (CEFR Level C1) --- Reading: 25/30, Listening: 27/30, Speaking: 20/30, Writing: 28/30.
+  \item \textbf{GRE General Test:} Quantitative \& Verbal Reasoning (Appointment Details \#4321510263969083).
+\end{itemize}
+
+% -------------------- RESEARCH & PROFESSIONAL EXPERIENCE --------------------
+\section{Research \& Professional Experience}
+\begin{itemize}[leftmargin=*,label={}]
+  \resumeSubheading
+    {Astha.ai}{Palo Alto, CA (Remote)}
+    {Senior AI Engineer}{Aug 2025 -- Present}
+    \begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+      \item Lead research on security, runtime governance, and threat modeling for autonomous multi-agent tool execution and Model Context Protocol (MCP) ecosystems.
+      \item Active core contributor to \textbf{SAFE-MCP}, an open-source framework under the \textbf{Linux Foundation} dedicated to auditing agent-tool orchestration vulnerabilities.
+      \item Co-designed a \textbf{Zero Trust Identity System for AI Agents}, introducing fine-grained cryptographic capability tokens, continuous policy enforcement, and provenance tracking across tool boundaries.
+      \item Formulated formal compliance mappings between SAFE-MCP safety controls and established global standards including NIST AI RMF, NIST SP 800-207, HIPAA, and GDPR.
+    \end{itemize}
+
+  \resumeSubheading
+    {Autolab Technologies Pvt. Ltd.}{Kathmandu, Nepal}
+    {Lead Backend Engineer}{Jul 2024 -- Aug 2025}
+    \begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+      \item Researched and implemented distributed data extraction and mining architectures for Japanese industrial retail leader \textbf{Misumi Co.}
+      \item Architected high-performance spec-matching software for complex mechanical components, formulating multi-iteration geometric and semantic attribute search algorithms.
+      \item Coordinated technical system architectures and interface contracts between bilingual engineering teams in Nepal and Japan.
+    \end{itemize}
+
+  \resumeSubheading
+    {Alpas Technology}{Kathmandu, Nepal}
+    {Data Engineer}{Sep 2023 -- Jul 2024}
+    \begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+      \item Designed and deployed an end-to-end multi-metric ($100+$ signals) search intelligence and analytics engine from the data ingestion layer to application APIs.
+      \item Designed high-throughput columnar data warehouse schemas and recurring automated ETL DAGs handling time-windowed aggregations from 20+ to 100+ heterogeneous external sources.
+      \item Applied first-principles axiomatic modeling to structure multi-level compound metrics into actionable business value indices.
+    \end{itemize}
+\end{itemize}
+
+\newpage
+
+% -------------------- KEY PROJECTS & OPEN SOURCE --------------------
+\section{Key Research \& Engineering Projects}
+\begin{itemize}[leftmargin=*,label={}]
+  \resumeProjectHeading
+    {\textbf{SAFE-MCP: Agent Safety \& Vulnerability Auditing Framework} $|$ \emph{Linux Foundation, Python, MCP}}{2025 -- Present}
+    \begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+      \item Open-source safety framework establishing vulnerability taxonomies and testing suites for MCP servers, client tools, and autonomous agent loops.
+    \end{itemize}
+
+  \resumeProjectHeading
+    {\textbf{Zero Trust Agent Identity Architecture} $|$ \emph{Astha.ai, Cryptographic Identity, Policy Enforcement}}{2025 -- Present}
+    \begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+      \item Engineered cryptographic verification and least-privilege scoping mechanisms to prevent unauthorized privilege escalation in multi-agent tool execution pipelines.
+    \end{itemize}
+
+  \resumeProjectHeading
+    {\textbf{High-Throughput Mechanical Spec-Matching Engine} $|$ \emph{Autolab / Misumi Japan, Python, C++, Distributed Systems}}{2024 -- 2025}
+    \begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+      \item High-speed distributed spec-matching pipeline comparing millions of physical component specifications using geometric tolerances and semantic attribute matching.
+    \end{itemize}
+
+  \resumeProjectHeading
+    {\textbf{Dataverse: Campus-Wide Data Science \& ML Competition} $|$ \emph{LOCUS, Pulchowk Campus}}{2022}
+    \begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+      \item Conceived, designed, and executed a major collegiate competitive data science event to foster competitive machine learning and practical data analysis among engineering students.
+    \end{itemize}
+
+  \resumeProjectHeading
+    {\textbf{Undergraduate Capstone Engineering Project} $|$ \emph{Tribhuvan University, IOE Pulchowk Campus}}{2022}
+    \begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+      \item Formulated and implemented full-cycle engineering capstone project in systems programming and applied machine learning evaluated by departmental faculty jury.
+    \end{itemize}
+\end{itemize}
+
+% -------------------- RELEVANT COURSEWORK --------------------
+\section{Relevant Academic Coursework (Pulchowk Campus)}
+\begin{itemize}[leftmargin=*,itemsep=1.5pt,topsep=1pt]
+  \item \textbf{Systems \& Networks:} Distributed Systems, Computer Networks, Operating Systems, Computer Organization \& Architecture, Data Communication.
+  \item \textbf{Computer Science Theory:} Theory of Computation, Data Structures \& Algorithms, Object-Oriented Analysis \& Design, Software Engineering, Discrete Structures, Simulation \& Modeling.
+  \item \textbf{AI \& Data Systems:} Artificial Intelligence, Big Data Technologies, Database Management Systems, Digital Signal Analysis \& Processing.
+  \item \textbf{Mathematical Foundations:} Applied Mathematics, Engineering Mathematics I, II \& III, Numerical Methods, Probability \& Statistics.
+\end{itemize}
+
+% -------------------- TECHNICAL SKILLS --------------------
+\section{Technical \& Theoretical Skills}
+\begin{itemize}[leftmargin=*,itemsep=1.5pt,topsep=1pt]
+  \item \textbf{Programming Languages:} Python (NumPy, SciPy, Pandas), C++, SQL, Bash, Go, LaTeX, HTML/CSS.
+  \item \textbf{AI \& Agent Safety:} Model Context Protocol (MCP), SAFE-MCP, Zero Trust Agent Architecture, Multi-Agent Systems, Tool Sandboxing, Threat Modeling, Prompt Injection Mitigation.
+  \item \textbf{Machine Learning \& Data:} PyTorch, TensorFlow, Scikit-learn, AutoML, Columnar Data Warehouses, Time Series \& Sequence Models, ETL Pipeline Engineering.
+  \item \textbf{Systems \& Infrastructure:} Distributed Systems, Linux/Unix Internals, Docker, Git, RESTful APIs, gRPC, Microservices, CI/CD.
+  \item \textbf{Security Standards:} NIST AI RMF, NIST SP 800-207 (Zero Trust), HIPAA Security Rule, GDPR Article 32 Controls.
+  \item \textbf{Theoretical Foundations:} Axiomatic Modeling \& Formal Reasoning, Theory of Computation, Ontologies \& Knowledge Graphs, Discrete Mathematics, Probability \& Statistics.
+\end{itemize}
+
+% -------------------- LEADERSHIP & ACADEMIC SERVICE --------------------
+\section{Academic Service, Leadership \& Creative Work}
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=1pt]
+  \item \textbf{Software Coordinator, LOCUS (2022 Tenure):} Elected executive member of the undergraduate engineering society at Pulchowk Campus; spearheaded campus software infrastructure, hackathons, and technical symposia.
+  \item \textbf{Playwright \& Director:} Wrote and directed an original full-length theatrical production for the annual campus cultural festival, recognized by campus consensus as the standout production of the event.
+  \item \textbf{Certifications:} Analyze Datasets and Train ML Models using AutoML (Google Cloud), Structuring Machine Learning Projects (DeepLearning.AI), Sequences, Time Series and Prediction (DeepLearning.AI).
+\end{itemize}
+
+\end{document}
